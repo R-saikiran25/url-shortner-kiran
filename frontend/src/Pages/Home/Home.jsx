@@ -31,7 +31,7 @@ const Home = () => {
       <Container size="sm" style={{ position: "relative", zIndex: 1 }}>
         <div
           style={{
-            backdropFilter: "blur(20px)",
+            backdropFilter: "blur(30px)",
             background: "rgba(255, 255, 255, 0.1)",
             border: "1px solid rgba(255, 255, 255, 0.2)",
             borderRadius: "30px",
@@ -53,7 +53,7 @@ const Home = () => {
               marginTop: "1rem",
             }}
           >
-            Your App Name
+            NexLink
           </Title>
 
           <Text
@@ -71,7 +71,7 @@ fw={700}
 
           <Button
             size="md"
-            radius="xl"
+            radius="md"
             variant="gradient"
             gradient={{ from: "grape", to: "indigo" }}
             onClick={() =>
