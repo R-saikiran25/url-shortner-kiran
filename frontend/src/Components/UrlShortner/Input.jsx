@@ -2,7 +2,6 @@ import { Button, TextInput } from '@mantine/core'
 import React, { useState } from 'react'
 import Service from '../../utils/http.js'
 
-
 export default function Input({setResponse}) {
    const service = new Service();
    const [payload, setPayload] = useState(
@@ -23,12 +22,19 @@ export default function Input({setResponse}) {
    // https://url-shortener-bootcamp.onrender.com/api/s
   
    // GET
-   // https://url-shortener-bootcamp.onrender.com/api/s/Z_0HvF2
+   // https://ur    l-shortener-bootcamp.onrender.com/api/s/Z_0HvF2
    return (
-       <div>
+       <div
+       style={{
+         display: "grid",
+         justifyContent: "center",
+         alignItems: "right",
+         height: "20vh",
+      }}
+   >
+    <div style={{ width: "500px" }}></div>
 
-
-           <TextInput
+           <TextInput 
                label="Input label"
                withAsterisk
                description="Input description"
@@ -40,7 +46,8 @@ export default function Input({setResponse}) {
            />
            <Button disabled={ payload.originalUrl == "" } onClick={(e) => {
                generateShortCode()
-           }} variant="filled" color="red">Shorten Url</Button>
+           }}  variant="gradient"
+  gradient={{ from: "#ff8c1a", to: "#ff5a00", deg: 180 }}>Shorten Url</Button>
        </div>
    )
 }

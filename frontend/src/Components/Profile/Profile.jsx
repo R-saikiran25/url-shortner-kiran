@@ -59,7 +59,7 @@ export default function Profile() {
            gap="md"
        >
            <Avatar src={data?.avatar} size="xl" alt="it's me" />
-           <Text  c='red' fw={700}> {data?.name}</Text>
+           <Text  c='black' fw={700}> {data?.name}</Text>
            <Text> {data?._id}</Text>
            <Text> {data?.email}</Text>
        </Stack>
